@@ -8,7 +8,7 @@ var photo = _("photo");
 var takebtn =_("takebtn");
 
 var height;
-var width=400;
+var width=320;
 video.oncanplay = function(){
    height = video.videoHeight / (video.videoWidth / width);
 
@@ -32,8 +32,6 @@ window.onload = function startup() {
                 .then(function(stream) {    //start view video from user camera 
                     video.srcObject = stream;
                     video.play();
-                    canvas.width = 400;
-                    canvas.height =400;
                     
                 }) 
                 .catch(function(err) { //if something went wrong
