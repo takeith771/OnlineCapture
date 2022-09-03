@@ -1,0 +1,32 @@
+
+
+   
+
+    #canvas , #video 
+    {
+        grid-row: 1;
+        grid-column: 1;
+        padding: 5px;    
+        margin: auto;   
+    }
+
+    #takebtn{
+        grid-column:1;
+        grid-row: 2;
+        padding: 5px;
+        background-color: blue;
+        border: 1px solid darkblue;
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+        width: 200px;
+        margin: auto;
+    }
+
+    .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto;
+        grid-template-rows:450px 50px;
+
+    }
